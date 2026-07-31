@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tesla Rediseño — Rodolfo Rojas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (min-width: 993px) {
+      .contexto-title {
+        font-size: clamp(3.5rem, 7vw, 6rem);
+      }
+    }
+
+    .proyectovisual-wrapper {
+      border-radius: 16px;
+    }
+
+    .skill-img {
+      border-radius: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="mi-navbar mi-navbar--solid px-3">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <nav class="nav-breadcrumb">
+        <a href="index.html">← Inicio</a>
+        <span class="sep">›</span>
+        <a href="proyectos.html">Proyectos</a>
+        <span class="sep">›</span>
+        <span>Tesla</span>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="nav-link" onclick="abrirMenu()">Menu</a>
+      <a href="contacto.html" class="nav-link nav-contacto">
+        <span class="nav-contacto-texto">Contacto</span>
+        <svg class="nav-contacto-icono" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <div class="d-flex gap-4 align-items-center">
+        <button class="menu-close" onclick="cerrarMenu()">Close</button>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="index.html" class="menu-link-item"><img src="images/liam gallagher smile GIF.gif" class="menu-link-img"
+          alt="">Home</a>
+      <a href="proyectos.html" class="menu-link-item"><img src="images/Shocked Speed GIF by Respective.gif"
+          class="menu-link-img" alt="">Proyectos</a>
+      <!-- <a href="areas.html" class="menu-link-item"><img src="images/Speed Hands GIF.gif" class="menu-link-img"
+          alt="">Áreas</a> -->
+      <a href="exploraciones.html" class="menu-link-item"><img src="images/Better Call Saul Bcs GIF by Stan..gif"
+          class="menu-link-img" alt="">Extras</a>
+      <a href="contacto.html" class="menu-link-item"><img src="images/Champions League Ronaldo GIF.gif"
+          class="menu-link-img" alt="">Contacto</a>
+    </div>
+  </div>
+  <!-- MENU OVERLAY -->
+
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+
+      <!-- HERO -->
+      <div class="col-12 hero hero--plain d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+        <div class="hero-main-content text-center">
+          <div class="mb-3">
+            <span class="proyecto-cat-tag">Web · Branding</span>
+          </div>
+          <h1 class="title1">TESLA</h1>
+          <p class="hero-accent-subtitle">Un rediseño web con criterios</p>
+          <a href="https://tesla-designweb.netlify.app/home" class="info-card-btn d-inline-flex mt-4" target="_blank"
+            rel="noopener">
+            Visitar página <span class="cta-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <!-- HERO -->
+
+      <!-- VIDEO / IMAGEN GRANDE -->
+      <div class="col-12 d-flex justify-content-center seccion" style="padding-top: 48px;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/TeslaModelY.gif" class="skill-img w-100" style="max-height: 85vh;" alt="Pantallas">
+          <p class="visual-subtitle">Dinamismo con videos integrados</p>
+        </div>
+      </div>
+      <!-- VIDEO / IMAGEN GRANDE -->
+
+      <!-- EDITORIAL: PROJECT OVERVIEW -->
+      <div class="col-12 seccion">
+        <div class="d-flex justify-content-between align-items-end" style="margin-bottom: 80px;">
+          <h2 class="title2" style="line-height: 0.88; margin: 0; max-width: 60%;">TESLA</h2>
+          <p class="tag m-0">2025</p>
+        </div>
+        <div class="row justify-content-between align-items-start">
+          <div class="col-12 col-md-2">
+            <p class="tag m-0">CONTEXTO</p>
+          </div>
+          <div class="col-12 col-md-8 mt-4 mt-md-0">
+            <p class="contexto-text">Proyecto de desarrollo web centrado en la recreación técnica y visual del sitio
+              oficial del Tesla, como Home, Model S y Shop. El objetivo principal fue construir una interfaz inmersiva
+              que mantuviera la integridad del diseño a través de múltiples resoluciones.</p>
+            <p class="contexto-text">El desarrollo se centró en la implementación avanzada del sistema de grillas de
+              Bootstrap para gestionar layouts complejos, la integración de video en segundo plano y la personalización
+              profunda de componentes CSS para lograr una estética sofisticada y profesional. El sitio destaca por su
+              robusta arquitectura de la información, resolviendo desafíos de visualización complejos como tablas
+              comparativas y galerías multimedia.</p>
+          </div>
+        </div>
+      </div>
+      <!-- EDITORIAL -->
+
+      <!-- VIDEO / IMAGEN GRANDE -->
+      <div class="col-12 d-flex justify-content-center seccion" style="padding-top: 48px;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/TeslaComparacionModelos.png" class="skill-img w-100" style="max-height: 85vh;"
+            alt="Pantallas">
+          <p class="visual-subtitle">Diseño limpio y moderno</p>
+        </div>
+      </div>
+      <!-- VIDEO / IMAGEN GRANDE -->
+
+      <!-- FILA 2: metadata · imagen ancha -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="row justify-content-between align-items-start flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-3 mt-5 mt-md-0">
+            <div class="d-flex flex-column gap-4">
+              <div>
+                <p class="tag mb-1">AÑO</p>
+                <p class="m-0">2025</p>
+              </div>
+              <div>
+                <p class="tag mb-1">CATEGORÍA</p>
+                <p class="m-0">Web · Rebranding</p>
+              </div>
+              <div>
+                <p class="tag mb-1">STACK</p>
+                <p class="m-0">Figma · HTML · CSS · BOOSTRAP</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="proyectovisual-wrapper">
+              <img src="images/TeslaMotor.png" class="skill-img w-100"
+                style="max-height: 60vh; object-position: center; object-fit: cover;" alt="Proyecto">
+              <p class="visual-subtitle">Enfoque en features interactivos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FILA 2 -->
+
+      <!-- VIDEO / IMAGEN GRANDE -->
+      <div class="col-12 d-flex justify-content-center seccion" style="padding-top: 48px;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/TeslaMockup.png" class="skill-img w-100" style="max-height: 85vh;" alt="Pantallas">
+          <p class="visual-subtitle">Moderno en conjunto de tendencias actuales</p>
+        </div>
+      </div>
+      <!-- VIDEO / IMAGEN GRANDE -->
+
+      <!-- FILA 3: imagen · texto -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="row justify-content-between align-items-start">
+          <div class="col-12 col-md-7">
+            <div class="proyectovisual-wrapper">
+              <img src="images/TeslaShopClothes.png" class="skill-img w-100"
+                style="max-height: 60vh; object-position: center; object-fit: cover;" alt="Proyecto">
+              <p class="visual-subtitle">Nueva UI/UX para la sección Tienda</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mt-5 mt-md-0">
+            <p class="contexto-text">Se implementó una lógica de diseño "mobile-first" y "desktop-adaptive", donde
+              elementos como el menú de navegación, las estadísticas de rendimiento y los banners promocionales se
+              reorganizan inteligentemente para garantizar la legibilidad y la usabilidad sin importar el tamaño de la
+              pantalla.</p>
+            <ul class="list-unstyled mt-3">
+              <li class="tag mb-2">→ Conceptualización en Figma</li>
+              <li class="tag mb-2">→ Estructura con containers y rows</li>
+              <li class="tag mb-2">→ UI moderna con enfoque exclusivo</li>
+              <li class="tag mb-2">→ Rediseño total</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FILA 3 -->
+
+      <!-- IMAGEN COMPLETA -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/TeslaModelos.png" class="custom-proyectovisual" alt="Módulos">
+          <p class="visual-subtitle">Selector interactivo</p>
+        </div>
+      </div>
+      <!-- IMAGEN COMPLETA -->
+
+      <!-- QUOTE -->
+      <div class="col-12 text-center seccion" style="padding-top: 0;">
+        <p class="title3 p-5">"Se siente más Tesla que incluso la actual, se siente el <span style="color: var(--accent)">dinamismo</span> que suelen tener sus autos."</p>
+        <p class="body2 m-0 p-0">Sofía Parada</p>
+        <p class="tag m-0 p-0">Licenciada en Linguística Inglesa</p>
+      </div>
+      <!-- QUOTE -->
+
+      <!-- IMAGEN COMPLETA -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/PortadaTesla.png" class="custom-proyectovisual" alt="Módulos">
+          <p class="visual-subtitle">Tesla es modernidad</p>
+        </div>
+      </div>
+      <!-- IMAGEN COMPLETA -->
+
+      <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+      <div class="col-12 seccion-x" style="padding-bottom: var(--section-py);">
+        <div class="row m-0 g-3">
+          <div class="col-12 col-md-6">
+            <a href="#" class="nav-proyecto nav-proyecto-prev">
+              <span class="nav-proyecto-label">← Proyecto anterior</span>
+              <h3 class="nav-proyecto-titulo"></h3>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="#" class="nav-proyecto nav-proyecto-next">
+              <span class="nav-proyecto-label">Proyecto siguiente →</span>
+              <h3 class="nav-proyecto-titulo"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+
+      <!-- FOOTER -->
+      <footer class="col-12 text-white pb-0 px-4 mt-5">
+        <div class="footer-ticket-line"></div>
+        <div class="row mt-5 mb-5 justify-content-between">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <p class="footer-brand">Rodolfo Rojas</p>
+            <p class="footer-meta">Santiago, Chile</p>
+            <p class="footer-meta">Diseñado &amp; Desarrollado · 2026</p>
+          </div>
+          <div class="col-12 col-md-4 text-start text-md-center mb-5 mb-md-0">
+            <h6 class="tag mb-3">NAVEGACIÓN</h6>
+            <ul class="list-unstyled footer-list m-0 text-start d-inline-block">
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="proyectos.html">PROYECTOS</a></li>
+              <!-- <li><a href="areas.html">ÁREAS</a></li> -->
+              <li><a href="exploraciones.html">EXTRAS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <h6 class="tag mb-3">REDES</h6>
+            <ul class="list-unstyled footer-list m-0 d-flex flex-column align-items-md-end">
+              <li><a href="https://www.linkedin.com/in/rodolfo-alejandro-rojas-morillo-7b460837b/" target="_blank">LINKEDIN</a></li>
+              <li><a href="https://www.instagram.com/rodolfo.rjs/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="mailto:rojasrodolfo906@gmail.com">CORREO</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

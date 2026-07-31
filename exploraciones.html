@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Extras — Rodolfo Rojas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="mi-navbar mi-navbar--solid px-3">
+    <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+    <div class="nav-right">
+      <a href="#" class="nav-link" onclick="abrirMenu()">Menu</a>
+      <a href="contacto.html" class="nav-link nav-contacto">
+        <span class="nav-contacto-texto">Contacto</span>
+        <svg class="nav-contacto-icono" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <div class="d-flex gap-4 align-items-center">
+        <button class="menu-close" onclick="cerrarMenu()">Close</button>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="index.html" class="menu-link-item"><img src="images/liam gallagher smile GIF.gif" class="menu-link-img"
+          alt="">Home</a>
+      <a href="proyectos.html" class="menu-link-item"><img src="images/Shocked Speed GIF by Respective.gif"
+          class="menu-link-img" alt="">Proyectos</a>
+      <!-- <a href="areas.html" class="menu-link-item"><img src="images/Speed Hands GIF.gif" class="menu-link-img"
+          alt="">Áreas</a> -->
+      <a href="exploraciones.html" class="menu-link-item"><img src="images/Better Call Saul Bcs GIF by Stan..gif"
+          class="menu-link-img" alt="">Extras</a>
+      <a href="contacto.html" class="menu-link-item"><img src="images/Champions League Ronaldo GIF.gif"
+          class="menu-link-img" alt="">Contacto</a>
+    </div>
+  </div>
+  <!-- MENU OVERLAY -->
+
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+
+      <!-- HERO -->
+      <div class="col-12 cartelera-hero p-5 mt-5">
+        <h1 class="cartelera-title">EXTRAS</h1>
+        <p class="tag mt-3">Trabajos breves, ejercicios & experimentos · Rodolfo Rojas</p>
+      </div>
+
+      <!-- FILTROS -->
+      <div class="col-12 p-0">
+        <div class="filtros-bar">
+          <button class="filtro-item activo" data-filtro="todos" onclick="filtrarGaleria(this)">Todos</button>
+          <button class="filtro-item" data-filtro="fotografía" onclick="filtrarGaleria(this)">Fotografía</button>
+          <button class="filtro-item" data-filtro="motion" onclick="filtrarGaleria(this)">Motion Graphics</button>
+          <button class="filtro-item" data-filtro="3d" onclick="filtrarGaleria(this)">3D</button>
+          <button class="filtro-item" data-filtro="web" onclick="filtrarGaleria(this)">Web</button>
+          <span class="tag ms-auto d-none d-md-block" id="contador-galeria">8 piezas</span>
+        </div>
+      </div>
+
+      <!-- GALERÍA MASONRY -->
+      <div class="col-12 px-5 py-5">
+        <div class="galeria-grid">
+
+          <div class="galeria-item" data-cat="fotografía" data-titulo="Hugo Boss Moon"
+            data-descripcion="Dirección y fotografía de producto para campaña conceptual Hugo Boss."
+            data-herramientas="Fotografía · Photoshop · Dirección" onclick="abrirGaleria(this)">
+            <img src="images/HugoBossAzul.JPG" alt="Hugo Boss Azul" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fotografía · Photoshop</p>
+              <h3 class="galeria-overlay-titulo">Hugo Boss Moon</h3>
+              <p class="galeria-overlay-desc">Dirección y fotografía de producto para campaña conceptual.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="fotografía" data-titulo="Hugo Boss Fade"
+            data-descripcion="Segunda variante del shoot, paleta clara y minimalista."
+            data-herramientas="Fotografía · Photoshop" onclick="abrirGaleria(this)">
+            <img src="images/HugoBossClaro.jpg" alt="Hugo Boss Claro" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fotografía · Photoshop</p>
+              <h3 class="galeria-overlay-titulo">Hugo Boss Fade</h3>
+              <p class="galeria-overlay-desc">Paleta clara y minimalista, segunda exploración del mismo concepto.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="fotografía" data-titulo="Hugo Boss Íntimo"
+            data-descripcion="Paleta oscura y misteriosa, tercera exploración del mismo concepto."
+            data-herramientas="Fotografía · Photoshop" onclick="abrirGaleria(this)">
+            <img src="images/HugoBossOscuro.JPG" alt="Hugo Boss Claro" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fotografía · Photoshop</p>
+              <h3 class="galeria-overlay-titulo">Hugo Boss Íntimo</h3>
+              <p class="galeria-overlay-desc">Paleta oscura y misteriosa, tercera exploración del mismo concepto.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="Mr. Fox" data-descripcion="Video animado con textos"
+            data-herramientas="After Effects · Procreate" data-video="images/FoxReel.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/FoxReel.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects · Procreate</p>
+              <h3 class="galeria-overlay-titulo">Mr. Fox</h3>
+              <p class="galeria-overlay-desc">Video animado con textos</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="New Balance Reel"
+            data-descripcion="Propuesta de anuncio que muestra poder y secreto. Distintas técnicas aplicadas."
+            data-herramientas="After Effects" data-video="images/NewBalanceReel.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/NewBalanceReel.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects</p>
+              <h3 class="galeria-overlay-titulo">New Balance Reel</h3>
+              <p class="galeria-overlay-desc">Propuesta de anuncio que muestra poder y secreto. Distintas técnicas
+                aplicadas.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="Raid Anuncio"
+            data-descripcion="Nanometraje para vender la idea de que Raid siempre salva. Técnicas de uso de modelos 3D y variadas."
+            data-herramientas="After Effects" data-video="images/ReelRaid.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/ReelRaid.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects</p>
+              <h3 class="galeria-overlay-titulo">Raid Anuncio</h3>
+              <p class="galeria-overlay-desc">Nanometraje para vender la idea de que Raid siempre salva. Técnicas de uso de modelos 3D y variadas.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="3d" data-titulo="Case DS"
+            data-descripcion="Este producto ha sido diseñado para ofrecer una solución cómoda y práctica para llevar tu Nintendo DS y hasta 6 juegos. Además, cuenta con un detalle innovador: una interacción luminosa integrada. Al abrir el estuche, las luces se encienden, mejorando la experiencia con un toque de elegancia y simplicidad."
+            data-herramientas="3D · Electrónica" onclick="abrirGaleria(this)">
+            <img src="images/CaseDSApertura.gif" alt="Case DS" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">3D · Electrónica</p>
+              <h3 class="galeria-overlay-titulo">Case DS</h3>
+              <p class="galeria-overlay-desc">Este producto ha sido diseñado para ofrecer una solución cómoda y práctica para llevar tu Nintendo DS y hasta 6 juegos. Además, cuenta con un detalle innovador: una interacción luminosa integrada. Al abrir el estuche, las luces se encienden, mejorando la experiencia con un toque de elegancia y simplicidad.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="New Balance Logo"
+            data-descripcion="Animación del logo con mucho dinamismo"
+            data-herramientas="After Effects" data-video="images/NEW BALANCE.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/NEW BALANCE.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects</p>
+              <h3 class="galeria-overlay-titulo">New Balance Logo</h3>
+              <p class="galeria-overlay-desc">Animación del logo con mucho dinamismo</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="Spotify Logo"
+            data-descripcion="Animación del logo a través de máscaras"
+            data-herramientas="After Effects" data-video="images/SPOTIFY.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/SPOTIFY.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects</p>
+              <h3 class="galeria-overlay-titulo">Spotify Logo</h3>
+              <p class="galeria-overlay-desc">Animación del logo a través de máscaras</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="Marcas Personales"
+            data-descripcion="Transformación de los logos con Path Morph"
+            data-herramientas="After Effects" data-video="images/PATH MORPH.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/PATH MORPH.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects</p>
+              <h3 class="galeria-overlay-titulo">Marcas Personales</h3>
+              <p class="galeria-overlay-desc">Transformación de los logos con Path Morph</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="motion" data-titulo="Twitter Logo"
+            data-descripcion="Animación del logo a través de máscaras"
+            data-herramientas="After Effects" data-video="images/LOGO TWITTER.mp4" onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline>
+              <source src="images/LOGO TWITTER.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">After Effects</p>
+              <h3 class="galeria-overlay-titulo">Twitter Logo</h3>
+              <p class="galeria-overlay-desc">Animación del logo a través de máscaras</p>
+            </div>
+          </div>
+
+          <div class="galeria-item galeria-item--multi"
+            data-cat="web"
+            data-titulo="LOLLAPALOOZA"
+            data-descripcion="Práctica de diseño web donde se hizó una réplica casi exacta de la página publicitaria del Lollapalooza en Chile."
+            data-herramientas="HTML · CSS · BOOTSTRAP"
+            data-images='["images/LollaHero.png","images/LollaContacto.png","images/LollaCards.png","images/LollaMenu.png"]'
+            data-link="https://lollapaloozapractice.netlify.app/"
+            data-link-label="Probar página"
+            onclick="abrirGaleria(this)">
+            <img src="images/LollaHero.png" alt="PYMA" class="galeria-img" data-idx="0">
+            <div class="galeria-multi-counter">1 / 4</div>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">HTML · CSS · BOOTSTRAP</p>
+              <h3 class="galeria-overlay-titulo">LOLLAPALOOZA</h3>
+              <p class="galeria-overlay-desc">Práctica de diseño web donde se hizó una réplica casi exacta de la página publicitaria del Lollapalooza en Chile.</p>
+              <span class="galeria-overlay-btn">Probar página →</span>
+            </div>
+          </div>
+
+          <div class="galeria-item galeria-item--multi"
+            data-cat="3d"
+            data-titulo="Ballena Kinetic"
+            data-descripcion="Pedido a encargo de un sistema de movimiento en 3D con una ballena."
+            data-herramientas="FUSION 360"
+            data-images='["images/Ballena3D.mp4","images/Ballena3DSistema.mp4"]'
+            onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline data-idx="0">
+              <source src="images/Ballena3D.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-multi-counter">1 / 2</div>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">FUSION 360</p>
+              <h3 class="galeria-overlay-titulo">Ballena Kinetic</h3>
+              <p class="galeria-overlay-desc">Pedido a encargo de un sistema de movimiento en 3D con una ballena.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item galeria-item--multi"
+            data-cat="3d"
+            data-titulo="Pájaro"
+            data-descripcion="Pedido a encargo de un animal en varias partes con movimiento en 3D."
+            data-herramientas="FUSION 360"
+            data-images='["images/Bird3DMOV.mp4","images/Bird3D.jpeg"]'
+            onclick="abrirGaleria(this)">
+            <video class="galeria-img" autoplay muted loop playsinline data-idx="0">
+              <source src="images/Bird3DMOV.mp4" type="video/mp4">
+            </video>
+            <div class="galeria-multi-counter">1 / 2</div>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">FUSION 360</p>
+              <h3 class="galeria-overlay-titulo">Pájaro</h3>
+              <p class="galeria-overlay-desc">Pedido a encargo de un animal en varias partes con movimiento en 3D.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="fotografía" data-titulo="Patrick Demarchelier"
+            data-descripcion="Retrato ilustrado con técnica mixta, exploración de color y textura."
+            data-herramientas="Fotografía · Photoshop" onclick="abrirGaleria(this)">
+            <img src="images/PatrickJP3.png" alt="Patrick" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fotografía · Photoshop</p>
+              <h3 class="galeria-overlay-titulo">Patrick Demarchelier</h3>
+              <p class="galeria-overlay-desc">Retrato ilustrado, exploración de color y textura.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="fotografía" data-titulo="Patrick Demarchelier"
+            data-descripcion="Retrato ilustrado con técnica mixta, exploración de color y textura."
+            data-herramientas="Fotografía · Photoshop" onclick="abrirGaleria(this)">
+            <img src="images/PatrickJP2.jpg" alt="Patrick" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fotografía · Photoshop</p>
+              <h3 class="galeria-overlay-titulo">Patrick Demarchelier</h3>
+              <p class="galeria-overlay-desc">Retrato ilustrado, exploración de color y textura.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item" data-cat="fotografía" data-titulo="Patrick Demarchelier"
+            data-descripcion="Retrato ilustrado con técnica mixta, exploración de color y textura."
+            data-herramientas="Fotografía · Photoshop" onclick="abrirGaleria(this)">
+            <img src="images/PatrickJP1.jpg" alt="Patrick" class="galeria-img">
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fotografía · Photoshop</p>
+              <h3 class="galeria-overlay-titulo">Patrick Demarchelier</h3>
+              <p class="galeria-overlay-desc">Retrato ilustrado, exploración de color y textura.</p>
+            </div>
+          </div>
+
+          <div class="galeria-item galeria-item--multi"
+            data-cat="web"
+            data-titulo="PYMA"
+            data-descripcion="Propuesta de plataforma de inversión para emprendedores. Dashboard, flujo de onboarding, chat con IA y navegación completa."
+            data-herramientas="Figma · UI Design · Prototipado"
+            data-images='["images/PortadaPYMA.png","images/PymaLogIn.png","images/PymaDashboard.png","images/PYMAEmprendedor.png","images/PymaChat.png","images/PymaIA.png"]'
+            data-link="https://launch-leap-learn.lovable.app/dashboard"
+            data-link-label="Probar prototipo"
+            onclick="abrirGaleria(this)">
+            <img src="images/PortadaPYMA.png" alt="PYMA" class="galeria-img" data-idx="0">
+            <div class="galeria-multi-counter">1 / 8</div>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Figma · UI Design</p>
+              <h3 class="galeria-overlay-titulo">PYMA</h3>
+              <p class="galeria-overlay-desc">Plataforma para emprendedores que tengan problemas con sus finanzas y crecimiento.</p>
+              <span class="galeria-overlay-btn">Probar prototipo →</span>
+            </div>
+          </div>
+
+          <div class="galeria-item galeria-item--multi"
+            data-cat="3d"
+            data-titulo="TAC OFF"
+            data-descripcion="Realización del diseño, modelado y producción de MVP de este proyecto llamado TAC OFF que busca ser una extensión de la persona para poder tomarse de pasamanos, con ergonomía y adaptable."
+            data-herramientas="Fusion 360 · UX Design"
+            data-images='["images/Tacdesign.jpeg","images/TACboceto.jpeg","images/TACconcepto.jpeg","images/TACgrip.jpeg","images/TACuso1.jpeg","images/TACuso2.jpeg","images/TACuso3.jpeg"]'
+            onclick="abrirGaleria(this)">
+            <img src="images/Tacdesign.jpeg" alt="TAC" class="galeria-img" data-idx="0">
+            <div class="galeria-multi-counter">1 / 7</div>
+            <div class="galeria-overlay">
+              <p class="galeria-overlay-herramientas">Fusion 360 · UX Design</p>
+              <h3 class="galeria-overlay-titulo">TAC OFF</h3>
+              <p class="galeria-overlay-desc">Realización del diseño, modelado y producción de MVP de este proyecto llamado TAC OFF que busca ser una extensión de la persona para poder tomarse de pasamanos, con ergonomía y adaptable.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- FIN GALERÍA -->
+
+      <!-- FOOTER -->
+      <footer class="col-12 text-white pb-0 px-4 mt-5">
+        <div class="footer-ticket-line"></div>
+        <div class="row mt-5 mb-5 justify-content-between">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <p class="footer-brand">Rodolfo Rojas</p>
+            <p class="footer-meta">Santiago, Chile</p>
+            <p class="footer-meta">Diseñado &amp; Desarrollado · 2026</p>
+          </div>
+          <div class="col-12 col-md-4 text-start text-md-center mb-5 mb-md-0">
+            <h6 class="tag mb-3">NAVEGACIÓN</h6>
+            <ul class="list-unstyled footer-list m-0 text-start d-inline-block">
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="proyectos.html">PROYECTOS</a></li>
+              <!-- <li><a href="areas.html">ÁREAS</a></li> -->
+              <li><a href="exploraciones.html">EXTRAS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <h6 class="tag mb-3">REDES</h6>
+            <ul class="list-unstyled footer-list m-0 d-flex flex-column align-items-md-end">
+              <li><a href="https://www.linkedin.com/in/rodolfo-alejandro-rojas-morillo-7b460837b/" target="_blank">LINKEDIN</a></li>
+              <li><a href="https://www.instagram.com/rodolfo.rjs/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="mailto:rojasrodolfo906@gmail.com">CORREO</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+
+    </div>
+  </div>
+
+  <!-- MODAL GALERÍA -->
+  <div id="galeria-modal" class="galeria-modal-bg" onclick="cerrarGaleria(event)">
+    <div class="galeria-modal-inner">
+      <div class="galeria-modal-img-col">
+        <img id="galeria-modal-img" src="" alt="">
+      </div>
+      <div class="galeria-modal-info-col">
+        <button class="galeria-modal-close" onclick="cerrarGaleria()">✕ Cerrar</button>
+        <p id="galeria-modal-herramientas" class="galeria-modal-herramientas"></p>
+        <h2 id="galeria-modal-titulo" class="galeria-modal-titulo"></h2>
+        <p id="galeria-modal-desc" class="galeria-modal-desc"></p>
+        <a id="galeria-modal-btn" href="#" class="galeria-modal-btn" target="_blank" rel="noopener"
+          style="display:none;">Ver proyecto →</a>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

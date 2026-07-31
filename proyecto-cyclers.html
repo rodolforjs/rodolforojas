@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyclers — Rodolfo Rojas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (min-width: 993px) {
+      .contexto-title {
+        font-size: clamp(3.5rem, 7vw, 6rem);
+      }
+    }
+
+    .proyectovisual-wrapper {
+      border-radius: 16px;
+    }
+
+    .skill-img {
+      border-radius: 16px;
+    }
+
+    /* Pares de imágenes: altura fija e igual */
+    .cyclers-pair .proyectovisual-wrapper {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+    .cyclers-pair .proyectovisual-wrapper .custom-proyectovisual {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Wireframe: imagen llena el wrapper correctamente */
+    .cyclers-wireframe .custom-proyectovisual {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="mi-navbar mi-navbar--solid px-3">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <nav class="nav-breadcrumb">
+        <a href="index.html">← Inicio</a>
+        <span class="sep">›</span>
+        <a href="proyectos.html">Proyectos</a>
+        <span class="sep">›</span>
+        <span>Cyclers</span>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="nav-link" onclick="abrirMenu()">Menu</a>
+      <a href="contacto.html" class="nav-link nav-contacto">
+        <span class="nav-contacto-texto">Contacto</span>
+        <svg class="nav-contacto-icono" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <div class="d-flex gap-4 align-items-center">
+        <button class="menu-close" onclick="cerrarMenu()">Close</button>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="index.html" class="menu-link-item"><img src="images/liam gallagher smile GIF.gif" class="menu-link-img"
+          alt="">Home</a>
+      <a href="proyectos.html" class="menu-link-item"><img src="images/Shocked Speed GIF by Respective.gif"
+          class="menu-link-img" alt="">Proyectos</a>
+      <!-- <a href="areas.html" class="menu-link-item"><img src="images/Speed Hands GIF.gif" class="menu-link-img"
+          alt="">Áreas</a> -->
+      <a href="exploraciones.html" class="menu-link-item"><img src="images/Better Call Saul Bcs GIF by Stan..gif"
+          class="menu-link-img" alt="">Extras</a>
+      <a href="contacto.html" class="menu-link-item"><img src="images/Champions League Ronaldo GIF.gif"
+          class="menu-link-img" alt="">Contacto</a>
+    </div>
+  </div>
+  <!-- MENU OVERLAY -->
+
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+
+      <!-- HERO -->
+      <div class="col-12 hero hero--plain d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+        <div class="hero-main-content text-center">
+          <div class="mb-3">
+            <span class="proyecto-cat-tag">UX/UI · Branding</span>
+          </div>
+          <h1 class="title1">CYCLERS</h1>
+          <p class="hero-accent-subtitle">Diseño de Design System para app de ciclismo</p>
+          <a href="https://www.figma.com/design/aoCYUDFyZBoQnK0ZXMDysV/Design-System-Cyclers?node-id=2410-320&t=D8bD6TiwC2C9nbAi-1" class="info-card-btn d-inline-flex mt-4" target="_blank" rel="noopener">
+            Revisar figma <span class="cta-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <!-- HERO -->
+
+      <!-- VIDEO / IMAGEN GRANDE -->
+      <div class="col-12 d-flex justify-content-center seccion" style="padding-top: 48px;">
+        <div class="proyectovisual-wrapper">
+          <video class="custom-proyectovisual" autoplay muted loop playsinline>
+            <source src="images/Cyclers_POT_1.mp4" type="video/mp4">
+          </video>
+          <button class="audio-btn" id="audio-btn-proyecto" onclick="toggleProyectoAudio()" aria-label="Toggle audio"><svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg></button>
+          <p class="visual-subtitle">Spot comercial</p>
+        </div>
+      </div>
+      <!-- VIDEO / IMAGEN GRANDE -->
+
+      <!-- EDITORIAL: PROJECT OVERVIEW -->
+      <div class="col-12 seccion">
+        <div class="d-flex justify-content-between align-items-end" style="margin-bottom: 80px;">
+          <h2 class="title2" style="line-height: 0.88; margin: 0; max-width: 60%;">CYCLERS</h2>
+          <p class="tag m-0">2026</p>
+        </div>
+        <div class="row justify-content-between align-items-start">
+          <div class="col-12 col-md-2">
+            <p class="tag m-0">CONTEXTO</p>
+          </div>
+          <div class="col-12 col-md-8 mt-4 mt-md-0">
+            <p class="contexto-text">Para Taller de Interacción, analizamos Cyclers, una app de navegación para ciclistas, y detectamos un problema de base: no tenía sistema. El verde dominaba cada pantalla sin jerarquía, los componentes no compartían una misma lógica de forma (bordes rectos, curvos y circulares conviviendo sin criterio) y la experiencia se sentía aislada, sin ninguna señal de comunidad o validación social.</p>
+            <p class="contexto-text">Construimos un design system desde cero sobre Material Design 2, con arquitectura de tokens en tres niveles (primitivo → semántico → componente) y una jerarquía documental completa: principios de diseño, fundamentos, elementos, componentes y patrones. Cada decisión —desde la altura de un botón hasta la desviación de la Nav Bottom respecto al estándar MD2— quedó justificada por escrito, no por intuición.</p>
+            <p class="contexto-text">El sistema quedó compuesto por 10 componentes documentados end-to-end (Nav Bottom, Buttons, Search Field, Chips, Tabs, FAB, Accordion, Switch, Dialog, Toast/Snackbar), 42 variables semánticas de color y 3 flujos de prototipo animados en Figma. Tipografía DM Sans para UI y DM Mono para datos numéricos, para que cada métrica de ciclismo se lea como dato, no como texto.</p>
+          </div>
+        </div>
+      </div>
+      <!-- EDITORIAL -->
+
+      <!-- IMAGEN COMPLETA -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/CyclersMockup1.png" class="custom-proyectovisual" alt="Módulos">
+          <p class="visual-subtitle">UI pensada para contextos ágiles y de rápido contacto</p>
+        </div>
+      </div>
+      <!-- IMAGEN COMPLETA -->
+
+      <!-- FILA 2: metadata · imagen ancha -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="row justify-content-between align-items-start flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-3 mt-5 mt-md-0">
+            <div class="d-flex flex-column gap-4">
+              <div>
+                <p class="tag mb-1">AÑO</p>
+                <p class="m-0">2026</p>
+              </div>
+              <div>
+                <p class="tag mb-1">CATEGORÍA</p>
+                <p class="m-0">Design Systems · UX/UI</p>
+              </div>
+              <div>
+                <p class="tag mb-1">STACK</p>
+                <p class="m-0">Figma · Figma Variables · Atomic Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="proyectovisual-wrapper">
+              <img src="images/CyclersMockup.png" class="skill-img w-100"
+                style="max-height: 60vh; object-position: center; object-fit: cover;" alt="Proyecto">
+              <p class="visual-subtitle">Busca mejorar la app, generando comunidad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FILA 2 -->
+
+      <!-- IMAGEN COMPLETA -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/CyclersPantallas.png" class="custom-proyectovisual" alt="Módulos">
+          <p class="visual-subtitle">Con una UI más moderna, intuitiva y atractiva para el usuario</p>
+        </div>
+      </div>
+      <!-- IMAGEN COMPLETA -->
+
+      <!-- FILA 3: imagen · texto -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="row justify-content-between align-items-start">
+          <div class="col-12 col-md-7">
+            <div class="proyectovisual-wrapper">
+              <img src="images/CyclersColors.png" class="skill-img w-100"
+                style="max-height: 60vh; object-position: center; object-fit: cover;" alt="Proyecto">
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mt-5 mt-md-0">
+            <p class="contexto-text">El sistema resuelve la tensión visual heredada del análisis inicial: reemplaza el monocromatismo verde por una escala de rol (acción, superficie, texto, ícono), unifica la morfología de todos los componentes bajo un mismo criterio de curvatura, y da forma a la dimensión social —perfiles, rutas de comunidad, validación entre ciclistas— que la app original no tenía.</p>
+            <ul class="list-unstyled mt-3">
+              <li class="tag mb-2">→ Arquitectura de tokens en 3 niveles (primitivo, semántico, componente)</li>
+              <li class="tag mb-2">→ 10 componentes documentados con anatomía, estados y comportamiento</li>
+              <li class="tag mb-2">→ 3 prototipos animados: iniciar ruta, seguir amigo, explorar ruta de comunidad</li>
+              <li class="tag mb-2">→ Sistema validado con heurísticas de Nielsen y Gestalt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FILA 3 -->
+
+      <!-- IMAGEN COMPLETA -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/CyclersComparación.png" class="custom-proyectovisual" alt="Módulos">
+        </div>
+      </div>
+      <!-- IMAGEN COMPLETA -->
+
+      <!-- IMAGEN COMPLETA -->
+      <div class="col-12 seccion cyclers-wireframe" style="padding-top: 0;">
+        <div class="proyectovisual-wrapper">
+          <img src="images/CyclersWireframe.png" class="custom-proyectovisual" alt="Módulos">
+          <p class="visual-subtitle">Bocetos para comenzar los componentes</p>
+        </div>
+      </div>
+      <!-- IMAGEN COMPLETA -->
+
+      <!-- DOS IMÁGENES -->
+      <div class="col-12 seccion cyclers-pair" style="padding-top: 0;">
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-md-6">
+            <div class="proyectovisual-wrapper">
+              <img src="images/CyclersCom.png" class="custom-proyectovisual" alt="Referentes">
+              <p class="visual-subtitle">Estructuración para cada componente</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="proyectovisual-wrapper">
+              <img src="images/CyclersState.png" class="custom-proyectovisual" alt="Competencia">
+              <p class="visual-subtitle">Tokens para cada estado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DOS IMÁGENES -->
+
+      <!-- DOS IMÁGENES -->
+      <div class="col-12 seccion cyclers-pair" style="padding-top: 0;">
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-md-6">
+            <div class="proyectovisual-wrapper">
+              <img src="images/CyclersFont.png" class="custom-proyectovisual" alt="Referentes">
+              <p class="visual-subtitle">Tipografías pensada para lectura rápida en viajes</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="proyectovisual-wrapper">
+              <img src="images/CyclersElevations.png" class="custom-proyectovisual" alt="Competencia">
+              <p class="visual-subtitle">Una plantilla de documentación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DOS IMÁGENES -->
+
+      <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+      <div class="col-12 seccion-x" style="padding-bottom: var(--section-py);">
+        <div class="row m-0 g-3">
+          <div class="col-12 col-md-6">
+            <a href="#" class="nav-proyecto nav-proyecto-prev">
+              <span class="nav-proyecto-label">← Proyecto anterior</span>
+              <h3 class="nav-proyecto-titulo"></h3>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a href="#" class="nav-proyecto nav-proyecto-next">
+              <span class="nav-proyecto-label">Proyecto siguiente →</span>
+              <h3 class="nav-proyecto-titulo"></h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+
+      <!-- FOOTER -->
+      <footer class="col-12 text-white pb-0 px-4 mt-5">
+        <div class="footer-ticket-line"></div>
+        <div class="row mt-5 mb-5 justify-content-between">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <p class="footer-brand">Rodolfo Rojas</p>
+            <p class="footer-meta">Santiago, Chile</p>
+            <p class="footer-meta">Diseñado &amp; Desarrollado · 2026</p>
+          </div>
+          <div class="col-12 col-md-4 text-start text-md-center mb-5 mb-md-0">
+            <h6 class="tag mb-3">NAVEGACIÓN</h6>
+            <ul class="list-unstyled footer-list m-0 text-start d-inline-block">
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="proyectos.html">PROYECTOS</a></li>
+              <!-- <li><a href="areas.html">ÁREAS</a></li> -->
+              <li><a href="exploraciones.html">EXTRAS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <h6 class="tag mb-3">REDES</h6>
+            <ul class="list-unstyled footer-list m-0 d-flex flex-column align-items-md-end">
+              <li><a href="https://www.linkedin.com/in/rodolfo-alejandro-rojas-morillo-7b460837b/" target="_blank">LINKEDIN</a></li>
+              <li><a href="https://www.instagram.com/rodolfo.rjs/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="mailto:rojasrodolfo906@gmail.com">CORREO</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

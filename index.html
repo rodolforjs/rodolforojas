@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rodolfo Rojas — Diseñador & Desarrollador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="mi-navbar px-3">
+    <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+    <div class="nav-right">
+      <button class="nav-audio-btn" id="dest-audio-btn" onclick="toggleDestAudio()" aria-label="Toggle audio"></button>
+      <a href="#" class="nav-link" onclick="abrirMenu()">Menu</a>
+      <a href="contacto.html" class="nav-link nav-contacto">
+        <span class="nav-contacto-texto">Contacto</span>
+        <svg class="nav-contacto-icono" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <div class="d-flex gap-4 align-items-center">
+        <button class="menu-close" onclick="cerrarMenu()">Close</button>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="index.html" class="menu-link-item"><img src="images/liam gallagher smile GIF.gif" class="menu-link-img"
+          alt="">Home</a>
+      <a href="proyectos.html" class="menu-link-item"><img src="images/Shocked Speed GIF by Respective.gif"
+          class="menu-link-img" alt="">Proyectos</a>
+      <!-- <a href="areas.html" class="menu-link-item"><img src="images/Speed Hands GIF.gif" class="menu-link-img"
+          alt="">Áreas</a> -->
+      <a href="exploraciones.html" class="menu-link-item"><img src="images/Better Call Saul Bcs GIF by Stan..gif"
+          class="menu-link-img" alt="">Extras</a>
+      <a href="contacto.html" class="menu-link-item"><img src="images/Champions League Ronaldo GIF.gif"
+          class="menu-link-img" alt="">Contacto</a>
+    </div>
+  </div>
+  <!-- MENU OVERLAY -->
+
+  <div class="col-12 container-fluid m-0 p-0" style="overflow-x: clip">
+    <div class="row">
+
+      <!-- HERO -->
+      <div class="col-12 hero">
+        <img src="images/IMG_1877-Enhanced-NR 1.png" class="hero-bg-img" alt="">
+        <div class="hero-content mx-3 mx-lg-5">
+          <p class="tag mt-5">[01] — Diseñador y desarrollador digital</p>
+          <h1 class="title1">Rodolfo Rojas</h1>
+          <div class="hero-stats mb-3">
+            <div>
+              <p class="stat-num">2+</p>
+              <p class="stat-label">Años de<br>experiencia</p>
+            </div>
+            <div>
+              <p class="stat-num">7+</p>
+              <p class="stat-label">Proyectos<br>completados</p>
+            </div>
+            <div>
+              <p class="stat-num">5</p>
+              <p class="stat-label">Áreas de<br>desarrollo</p>
+            </div>
+          </div>
+          <div class="hero-sobre mt-0 mt-lg-5">
+            <p class="tag">[02] — Sobre mí</p>
+            <p class="hero-desc">Soy diseñador multidisciplinario con más de 2 años creando <span
+                style="color: var(--accent)"> experiencias digitales </span> que equilibran estética y funcionalidad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- HERO -->
+
+      <!-- DESTACADOS -->
+      <div class="col-12 p-0 mx-0 mb-5" id="dest-section">
+        <div class="dest-sticky" id="dest-sticky">
+
+          <div class="dest-slide activo" data-idx="0">
+            <video class="dest-media" autoplay muted loop playsinline>
+              <source src="images/ConsorcioVideoPromocional.mp4" type="video/mp4">
+            </video>
+            <div class="dest-darkener"></div>
+            <div class="dest-content">
+              <span class="proyecto-cat-tag">Rediseño de App · 2025</span>
+              <h2 class="dest-titulo">A TU RITMO</h2>
+            </div>
+            <a href="proyecto-consorcio.html" class="dest-link-full" aria-label="Ver Banco Consorcio"></a>
+          </div>
+
+          <div class="dest-slide" data-idx="1">
+            <video class="dest-media" autoplay muted loop playsinline>
+              <source src="images/MAPI_SPOT_7.mp4" type="video/mp4">
+            </video>
+            <div class="dest-darkener"></div>
+            <div class="dest-content">
+              <span class="proyecto-cat-tag">Plataforma de Automatización · 2026</span>
+              <h2 class="dest-titulo">MAPI</h2>
+            </div>
+            <a href="proyecto-mapi.html" class="dest-link-full" aria-label="Ver MAPI"></a>
+          </div>
+
+          <div class="dest-slide" data-idx="2">
+            <video class="dest-media" autoplay muted loop playsinline>
+              <source src="images/Cyclers_POT_1.mp4" type="video/mp4">
+            </video>
+            <div class="dest-darkener"></div>
+            <div class="dest-content">
+              <span class="proyecto-cat-tag">Rediseño de APP · 2026</span>
+              <h2 class="dest-titulo">CYCLERS</h2>
+            </div>
+            <a href="proyecto-cyclers.html" class="dest-link-full" aria-label="Ver Cyclers"></a>
+          </div>
+
+          <!-- Flash corte -->
+          <div class="dest-flash" id="dest-flash"></div>
+
+          <!-- Stepper lateral (desktop + tablet) -->
+          <div class="dest-stepper" id="dest-stepper">
+            <button class="dest-step activo" onclick="destScrollTo(0)">
+              <span class="dest-step-num">01</span>
+              <div class="dest-step-pip">
+                <div class="dest-step-fill"></div>
+              </div>
+            </button>
+            <button class="dest-step" onclick="destScrollTo(1)">
+              <span class="dest-step-num">02</span>
+              <div class="dest-step-pip">
+                <div class="dest-step-fill"></div>
+              </div>
+            </button>
+            <button class="dest-step" onclick="destScrollTo(2)">
+              <span class="dest-step-num">03</span>
+              <div class="dest-step-pip">
+                <div class="dest-step-fill"></div>
+              </div>
+            </button>
+          </div>
+
+          <!-- Dots mobile -->
+          <div class="dest-mdots" id="dest-mdots">
+            <button class="dest-mdot activo" onclick="destScrollTo(0)"></button>
+            <button class="dest-mdot" onclick="destScrollTo(1)"></button>
+            <button class="dest-mdot" onclick="destScrollTo(2)"></button>
+          </div>
+
+        </div>
+      </div>
+      <!-- DESTACADOS -->
+
+      <!-- PROYECTOS WHEEL -->
+      <div class="col-12 seccion-y" id="wheel-section">
+
+        <div class="wheel-header seccion-x">
+          <h2 class="wheel-titulo">¿Quieres ver más?</h2>
+          <a href="proyectos.html" class="tag scatter-link">Explora todos los proyectos →</a>
+        </div>
+
+        <div class="wheel-outer" id="wheel-outer">
+          <div class="wheel-track" id="wheel-track">
+
+            <a class="wheel-card" href="proyecto-consorcio.html">
+              <div class="wheel-card-img"><img src="images/PortadaConsorcio.png" alt="Banco Consorcio"></div>
+              <p class="wheel-card-label">App Bancaria · 2025 — A TU RITMO</p>
+            </a>
+
+            <a class="wheel-card" href="proyecto-mapi.html">
+              <div class="wheel-card-img"><img src="images/MapiTiendaMockup.png" alt="MAPI"></div>
+              <p class="wheel-card-label">Plataforma · 2026 — MAPI</p>
+            </a>
+
+            <a class="wheel-card" href="proyecto-cyclers.html">
+              <div class="wheel-card-img"><img src="images/CyclersMockup.png" alt="Cyclers"></div>
+              <p class="wheel-card-label">Design System · 2026 — CYCLERS</p>
+            </a>
+
+            <a class="wheel-card" href="proyecto-tesla.html">
+              <div class="wheel-card-img"><img src="images/PortadaTesla.png" alt="Tesla"></div>
+              <p class="wheel-card-label">Web Design · 2024 — TESLA</p>
+            </a>
+
+            <a class="wheel-card" href="proyecto-altic.html">
+              <div class="wheel-card-img"><img src="images/PortadaAltic.jpg" alt="Altic"></div>
+              <p class="wheel-card-label">Product Design · 2024 — ALTIC</p>
+            </a>
+
+            <a class="wheel-card" href="proyecto-freshy.html">
+              <div class="wheel-card-img"><img src="images/FreshySuperior.jpg" alt="Freshy"></div>
+              <p class="wheel-card-label">Product Design · 2024 — FRESHY</p>
+            </a>
+
+            <a class="wheel-card" href="proyecto-puntos-suspensivos.html">
+              <div class="wheel-card-img"><img src="images/PScafeventana.png" alt="Puntos Suspensivos"></div>
+              <p class="wheel-card-label">Animación · 2023 — PUNTOS SUSPENSIVOS</p>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- PROYECTOS WHEEL -->
+
+      <!-- ÁREAS DE DESARROLLO -->
+      <div class="col-12 seccion">
+        <div class="d-flex align-items-center gap-3 mb-5">
+          <span class="tag">ÁREAS DE DESARROLLO</span>
+        </div>
+        <div class="row" id="areas-lista">
+          <a href="" class="col-12 area-item d-block" data-sub="Investigación & Prototipos" style="color:inherit;">
+            <div class="row align-items-center justify-content-center m-0 w-100">
+              <div class="col-auto area-titulo-wrap p-0">
+                <div class="area-img-wrap">
+                  <video src="images/Cyclers_POT_1.mp4" class="area-img" autoplay muted loop playsinline></video>
+                </div>
+                <h2 class="area-titulo">UX/UI DESIGN</h2>
+                <div class="area-sub-wrap">
+                  <span class="area-sub">investigación Y FLUJOS</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="col-12 area-item d-block" data-sub="HTML, CSS, JS" style="color:inherit;">
+            <div class="row align-items-center justify-content-center m-0 w-100">
+              <div class="col-auto area-titulo-wrap p-0">
+                <div class="area-img-wrap">
+                  <img src="images/TeslaModelY.gif" alt="DISEÑO WEB" class="area-img">
+                </div>
+                <h2 class="area-titulo">WEB DESIGN</h2>
+                <div class="area-sub-wrap">
+                  <span class="area-sub">HTML, CSS, JS</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="col-12 area-item d-block" style="color:inherit;">
+            <div class="row align-items-center justify-content-center m-0 w-100">
+              <div class="col-auto area-titulo-wrap p-0">
+                <div class="area-img-wrap">
+                  <img src="images/AlticMuestra.gif" alt="Objetos Inteligentes" class="area-img">
+                </div>
+                <h2 class="area-titulo">PRODUCT DESIGN</h2>
+                <div class="area-sub-wrap">
+                  <span class="area-sub">3D DESIGN AND MVP´S</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="col-12 area-item d-block" style="color:inherit;">
+            <div class="row align-items-center justify-content-center m-0 w-100">
+              <div class="col-auto area-titulo-wrap p-0">
+                <div class="area-img-wrap">
+                  <img src="images/CaseDSUso.gif" alt="Modelado 3D" class="area-img">
+                </div>
+                <h2 class="area-titulo">PROTOTIPOS</h2>
+                <div class="area-sub-wrap">
+                  <span class="area-sub">ELECTRONICS AND ROBOTIC</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="col-12 area-item d-block" data-sub="Videos Creativos" style="color:inherit;">
+            <div class="row align-items-center justify-content-center m-0 w-100">
+              <div class="col-auto area-titulo-wrap p-0">
+                <div class="area-img-wrap">
+                  <img src="images/PortadaAnimacion.gif" alt="Motion Graphics" class="area-img">
+                </div>
+                <h2 class="area-titulo">MOTION GRAPHICS</h2>
+                <div class="area-sub-wrap">
+                  <span class="area-sub">videos creativos</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- ÁREAS DE DESARROLLO
+        <div class="d-flex justify-content-center my-5">
+        <a href="areas.html" class="tag">VER TODOS →</a> -->
+      </div>
+    </div>
+    <!-- ÁREAS DE DESARROLLO -->
+
+    <!-- CTA -->
+    <div class="col-12 cta-section seccion">
+      <p class="tag mb-3">¿Trabajamos juntos?</p>
+      <div class="d-flex flex-column gap-3 gap-lg-4">
+        <div class="cta-row d-flex flex-wrap align-items-center gap-3 gap-lg-4">
+          <h2 class="cta-titulo cta-t1">LANZA LA IDEA</h2>
+          <a href="mailto:rojasrodolfo906@gmail.com" class="cta-btn flex-grow-1 cta-b1">
+            Manda un saludo <span class="cta-arrow">→</span>
+          </a>
+        </div>
+        <div class="cta-row d-flex flex-wrap align-items-center gap-3 gap-lg-4">
+          <h2 class="cta-titulo flex-grow-1 cta-t2">
+            <img src="images/alice in wonderland time GIF.gif" alt="" class="cta-img-inline" aria-hidden="true">
+            Y AVANZAMOS
+          </h2>
+          <a href="contacto.html" class="cta-btn align-items-center flex-grow-1 cta-b2">
+            Agendar <span class="cta-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- CTA -->
+
+    <!-- EXPLORACIONES PREVIEW -->
+    <div class="col-12 seccion-y my-5">
+      <div class="d-flex justify-content-between align-items-end mb-4 seccion-x" style="padding-bottom: 0;">
+        <div>
+          <p class="tag mb-1">EXTRAS</p>
+          <h2 class="title3 m-0">Trabajos breves & experimentos</h2>
+        </div>
+        <a href="exploraciones.html" class="tag">Ver todo →</a>
+      </div>
+      <div class="strip-proyectos" id="strip-exploraciones">
+        <div class="strip-track"></div>
+      </div>
+    </div>
+    <!-- FIN EXPLORACIONES PREVIEW -->
+
+    <!-- FOOTER -->
+    <footer class="col-12 text-white pb-0 px-4 mt-5">
+      <div class="footer-ticket-line"></div>
+      <div class="row mt-5 mb-5 justify-content-between">
+        <div class="col-12 col-md-4 mb-5 mb-md-0">
+          <p class="footer-brand">Rodolfo Rojas</p>
+          <p class="footer-meta">Santiago, Chile</p>
+          <p class="footer-meta">Diseñado &amp; Desarrollado · 2026</p>
+        </div>
+        <div class="col-12 col-md-4 text-start text-md-center mb-5 mb-md-0">
+          <h6 class="tag mb-3">NAVEGACIÓN</h6>
+          <ul class="list-unstyled footer-list m-0 text-start d-inline-block">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="proyectos.html">PROYECTOS</a></li>
+            <!-- <li><a href="areas.html">ÁREAS</a></li> -->
+            <li><a href="exploraciones.html">EXTRAS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 text-md-end">
+          <h6 class="tag mb-3">REDES</h6>
+          <ul class="list-unstyled footer-list m-0 d-flex flex-column align-items-md-end">
+            <li><a href="https://www.linkedin.com/in/rodolfo-alejandro-rojas-morillo-7b460837b/"
+                target="_blank">LINKEDIN</a></li>
+            <li><a href="https://www.instagram.com/rodolfo.rjs/" target="_blank">INSTAGRAM</a></li>
+            <li><a href="mailto:rojasrodolfo906@gmail.com">CORREO</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

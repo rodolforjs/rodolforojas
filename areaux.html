@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área UX/UI — Rodolfo Rojas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .skill-img { max-height: none; }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="mi-navbar px-3">
+    <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+    <div class="nav-right">
+      <a href="#" class="nav-link" onclick="abrirMenu()">Menu</a>
+      <a href="contacto.html" class="nav-link nav-contacto">
+        <span class="nav-contacto-texto">Contacto</span>
+        <svg class="nav-contacto-icono" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-left">
+      <a href="index.html">← Inicio</a>
+      <span class="sep">›</span>
+      <!-- <a href="areas.html">Áreas</a> -->
+      <span class="sep">›</span>
+      <span>UX/UI Diseño</span>
+    </div>
+    <span id="clock">00:00:00</span>
+  </div>
+  <!-- BREADCRUMB -->
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="nav-logo">Rodolfo Rojas</a>
+      <div class="d-flex gap-4 align-items-center">
+        <button class="menu-close" onclick="cerrarMenu()">Close</button>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+    </div>
+    <div class="menu-links">
+      <a href="index.html" class="menu-link-item"><img src="images/liam gallagher smile GIF.gif" class="menu-link-img" alt="">Home</a>
+      <a href="proyectos.html" class="menu-link-item"><img src="images/Shocked Speed GIF by Respective.gif" class="menu-link-img" alt="">Proyectos</a>
+      <!-- <a href="areas.html" class="menu-link-item"><img src="images/Speed Hands GIF.gif" class="menu-link-img" alt="">Áreas</a> -->
+      <a href="exploraciones.html" class="menu-link-item"><img src="images/Better Call Saul Bcs GIF by Stan..gif" class="menu-link-img" alt="">Extras</a>
+      <a href="contacto.html" class="menu-link-item"><img src="images/Champions League Ronaldo GIF.gif" class="menu-link-img" alt="">Contacto</a>
+    </div>
+  </div>
+  <!-- MENU OVERLAY -->
+
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+
+      <!-- HERO -->
+      <div class="col-12 hero d-flex align-items-center justify-content-center">
+        <img src="images/prueba.jpeg" class="hero-bg-img" alt="Background">
+        <div class="hero-main-content text-center">
+          <p class="hero-label">[AREA DE] — DESARROLLO</p>
+          <h1 class="hero-display-title">UX/UI DISEÑO</h1>
+          <p class="hero-accent-subtitle">DISEÑO DE PRODUCTOS DIGITALES CON FOCO EN CLARIDAD, RITMO Y PROPÓSITO.</p>
+        </div>
+        <div class="hero-philosophy-box">
+          <p class="hero-label">[FILOSOFÍA]</p>
+          <p class="philosophy-text">
+            El buen diseño no se nota — <span>se siente.</span> Cada decisión existe para que el usuario llegue antes a
+            su intención, sin fricción y con un gesto que recuerde.
+          </p>
+        </div>
+      </div>
+      <!-- HERO -->
+
+      <!-- CORE SKILLS -->
+      <div class="row align-items-top seccion">
+        <div class="col-12 d-flex align-items-center gap-3 mb-4">
+          <span class="tag">SKILLS</span>
+          <div class="section-header-line"></div>
+        </div>
+        <div class="col-12 my-5">
+          <div class="row">
+            <div class="col-12 col-lg-2">
+              <p class="tag">CORE SKILL · 01</p>
+            </div>
+            <div class="col-12 col-lg-5 px-lg-5">
+              <h2 class="title2 mb-4">DESDE CERO</h2>
+              <p class="subtitle2">Convierto ideas en experiencias. Todo lo que hay que construir — planear, diseñar,
+                entregar. De principio a fin. Sin atajos. Mezclamos creatividad y precisión, hechos para destacar.</p>
+              <p class="tag mt-4">→ Productos digitales completos</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <img src="images/UX-CORE1.jpg" alt="Proceso de diseño desde cero" class="skill-img w-100">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-5">
+          <div class="row">
+            <div class="col-12 col-lg-2">
+              <p class="tag">CORE SKILL · 02</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <img src="images/UX-CORE2.png" alt="Investigación" class="skill-img w-100">
+            </div>
+            <div class="col-12 col-lg-5 px-lg-5 mt-3">
+              <h2 class="title2 mb-4">INVESTIGACIÓN</h2>
+              <p class="subtitle2">Entrevistas, observación y datos para entender qué importa. Cada decisión arranca con
+                una pregunta clara y termina en insights accionables que aplicó en la iteración constante del proyecto.</p>
+              <p class="tag mt-4">→ User research & síntesis</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-5">
+          <div class="row">
+            <div class="col-12 col-lg-2">
+              <p class="tag">CORE SKILL · 03</p>
+            </div>
+            <div class="col-12 col-lg-5 px-lg-5">
+              <h2 class="title2 mb-4">ARQUITECTO</h2>
+              <p class="subtitle2">Mapeo de flujos, jerarquías y navegación. Construyo estructuras que se sienten obvias
+                para el usuario y mantienen su lógica cuando el producto crece.</p>
+              <p class="tag mt-4">→ Information architecture & flows</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <img src="images/UX-CORE3.png" alt="Arquitectura" class="skill-img w-100">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 my-5">
+          <div class="row">
+            <div class="col-12 col-lg-2">
+              <p class="tag">CORE SKILL · 04</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <img src="images/UX-CORE4.png" alt="Sistemas" class="skill-img w-100">
+            </div>
+            <div class="col-12 col-lg-5 px-lg-5 mt-3">
+              <h2 class="title2 mb-4">SISTEMAS</h2>
+              <p class="subtitle2">Tokens, componentes y guías documentadas. Diseño bibliotecas vivas que ayudan al equipo de producto a moverse rápido sin perder coherencia visual ni de marca.</p>
+              <p class="tag mt-4">→ Design systems escalables</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CORE SKILLS -->
+
+      <!-- HERRAMIENTAS -->
+      <div class="col-12 seccion" style="padding-top: 0;">
+        <div class="col-12 d-flex align-items-center gap-3 mb-4">
+          <span class="tag">HERRAMIENTAS</span>
+          <div class="section-header-line"></div>
+        </div>
+        <div class="area-tools-grid">
+          <div class="row g-0">
+            <div class="col-6 col-md-4 col-lg-2 area-tool-item p-4">
+              <p class="area-tool-name">Figma</p>
+              <p class="area-tool-desc">Diseño UI & Design Systems</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 area-tool-item p-4">
+              <p class="area-tool-name">Maze</p>
+              <p class="area-tool-desc">Testing & validación</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 area-tool-item p-4">
+              <p class="area-tool-name">ProtoPie</p>
+              <p class="area-tool-desc">Prototipos avanzados</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 area-tool-item p-4">
+              <p class="area-tool-name">FigJam</p>
+              <p class="area-tool-desc">Workshops & mapas</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 area-tool-item p-4">
+              <p class="area-tool-name">Notion</p>
+              <p class="area-tool-desc">Documentación</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 area-tool-item p-4">
+              <p class="area-tool-name">Miro</p>
+              <p class="area-tool-desc">Síntesis & flujos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HERRAMIENTAS -->
+
+      <!-- DESTACADOS -->
+      <div class="col-12 text-white p-3 my-5">
+        <div class="row mb-4">
+          <div class="contenedor-media col-12 p-0 overflow-hidden" id="contenedor-media">
+            <video id="media-principal" class="media-principal" autoplay muted loop playsinline>
+              <source src="images/ConsorcioVideoPromocional.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="row align-items-end m-0">
+          <!-- CONSORCIO -->
+          <div class="col-lg-6 col-12 p-3" id="card-consorcio"
+            onclick="seleccionarProyecto('consorcio', 'video', 'images/ConsorcioVideoPromocional.mp4')"
+            style="cursor: pointer; transition: 0.4s;">
+            <span class="text-uppercase d-block mb-1 tag">consorcio</span>
+            <div class="d-flex align-items-center gap-4">
+              <h2 id="titulo-consorcio" class="carousel-titulo-activo">BANCO</h2>
+              <div id="meta-consorcio" class="d-block">
+                <p class="m-0"><span class="body">Año:<span style="color: var(--accent)"> 2025 </span></span></p>
+                <p class="m-0"><span class="body">Categoría:<span style="color: var(--accent)"> UX/UI Design </span></span></p>
+              </div>
+            </div>
+          </div>
+          <!-- ALTIC -->
+          <div class="col-lg-3 col-6 col-sm-4 p-3" id="card-altic"
+            onclick="seleccionarProyecto('altic', 'imagen', 'images/AlticMuestra.gif')"
+            style="cursor: pointer; transition: 0.4s;">
+            <span class="text-uppercase d-block mb-1 tag">Tablero</span>
+            <div class="d-flex align-items-center gap-4">
+              <h2 id="titulo-altic" class="carousel-titulo-desactivo">ALTIC</h2>
+              <div id="meta-altic" class="d-none">
+                <p class="m-0"><span class="body">Año:<span style="color: var(--accent)"> 2024 </span></span></p>
+                <p class="m-0"><span class="body">Categoría:<span style="color: var(--accent)"> Producto </span></span></p>
+              </div>
+            </div>
+          </div>
+          <!-- TESLA -->
+          <div class="col-lg-3 col-6 col-sm-4 p-3" id="card-tesla"
+            onclick="seleccionarProyecto('tesla', 'imagen', 'images/TeslaModelY.gif')"
+            style="cursor: pointer; transition: 0.4s;">
+            <span class="text-uppercase d-block mb-1 tag">Propuesta Web</span>
+            <div class="d-flex align-items-center gap-4">
+              <h2 id="titulo-tesla" class="carousel-titulo-desactivo">TESLA</h2>
+              <div id="meta-tesla" class="d-none">
+                <p class="m-0"><span class="body">Año:<span style="color: var(--accent)"> 2025 </span></span></p>
+                <p class="m-0"><span class="body">Categoría:<span style="color: var(--accent)"> Diseño Web </span></span></p>
+              </div>
+            </div>
+          </div>
+          <!-- DOTS MOBILE -->
+          <div class="col-12 d-flex justify-content-center gap-2 pt-2 pb-1 d-md-none" id="carousel-dots">
+            <button class="carousel-dot activo" data-index="0" aria-label="Consorcio"></button>
+            <button class="carousel-dot" data-index="1" aria-label="Altic"></button>
+            <button class="carousel-dot" data-index="2" aria-label="Tesla"></button>
+          </div>
+        </div>
+      </div>
+      <!-- DESTACADOS -->
+
+      <!-- QUOTE -->
+      <div class="col-12 text-center seccion">
+        <div class="col-12 d-flex align-items-center gap-3 mb-4">
+          <span class="tag">CLIENTE FELIZ</span>
+          <div class="section-header-line"></div>
+        </div>
+        <p class="title3 p-5">"Una experiencia <span style="color: var(--accent)"> excepcional </span> trabajando con Rodolfo. Entendió el problema,
+          propuso una dirección clara y entregó un producto que nuestros usuarios adoptaron desde el primer día."</p>
+        <p class="tag">María Fernández<br>Head of Product · Norte Studio</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="col-12 cta-section seccion">
+        <p class="tag mb-3">¿Trabajamos juntos?</p>
+        <div class="d-flex flex-column gap-3 gap-lg-4">
+          <div class="cta-row d-flex flex-wrap align-items-center gap-3 gap-lg-4">
+            <h2 class="cta-titulo cta-t1">LANZA LA IDEA</h2>
+            <a href="mailto:rojasrodolfo906@gmail.com" class="cta-btn flex-grow-1 cta-b1">
+              Manda un saludo <span class="cta-arrow">→</span>
+            </a>
+          </div>
+          <div class="cta-row d-flex flex-wrap align-items-center gap-3 gap-lg-4">
+            <h2 class="cta-titulo flex-grow-1 cta-t2">
+              <img src="images/Better Call Saul Bcs GIF by Stan..gif" alt="" class="cta-img-inline" aria-hidden="true">
+              Y AVANZAMOS
+            </h2>
+            <a href="contacto.html" class="cta-btn align-items-center flex-grow-1 cta-b2">
+              Agendar <span class="cta-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CTA -->
+
+      <!-- FOOTER -->
+      <footer class="col-12 text-white pb-0 px-4 mt-5">
+        <div class="footer-ticket-line"></div>
+        <div class="row mt-5 mb-5 justify-content-between">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <p class="footer-brand">Rodolfo Rojas</p>
+            <p class="footer-meta">Santiago, Chile</p>
+            <p class="footer-meta">Diseñado &amp; Desarrollado · 2026</p>
+          </div>
+          <div class="col-12 col-md-4 text-start text-md-center mb-5 mb-md-0">
+            <h6 class="tag mb-3">NAVEGACIÓN</h6>
+            <ul class="list-unstyled footer-list m-0 text-start d-inline-block">
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="proyectos.html">PROYECTOS</a></li>
+              <!-- <li><a href="areas.html">ÁREAS</a></li> -->
+              <li><a href="exploraciones.html">EXTRAS</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-md-end">
+            <h6 class="tag mb-3">REDES</h6>
+            <ul class="list-unstyled footer-list m-0 d-flex flex-column align-items-md-end">
+              <li><a href="https://www.linkedin.com/in/rodolfo-alejandro-rojas-morillo-7b460837b/" target="_blank">LINKEDIN</a></li>
+              <li><a href="https://www.instagram.com/rodolfo.rjs/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="mailto:rojasrodolfo906@gmail.com">CORREO</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
